@@ -64,6 +64,7 @@ docker-compose up
 docker-compose down
 
 docker-compose up --build -d
+docker-compose -p fastapi-docker up --build -d
 ```
 
 ## 6. Add more services (Redis)

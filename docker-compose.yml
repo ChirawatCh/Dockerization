@@ -1,5 +1,6 @@
 services:
   app:
+    image: fastapi
     build: .
     container_name: python-server
     command: uvicorn src.main:app --host 0.0.0.0 --port 80 --reload
@@ -11,4 +12,5 @@ services:
       - redis
 
   redis:
+    container_name: redis
     image: redis:alpine
